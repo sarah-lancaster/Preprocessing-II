@@ -254,3 +254,12 @@ nav a:hover {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  padding: 10px 40px;
+  border-radius: 10px;
+  background-color: teal;
+  color: white;
+}
