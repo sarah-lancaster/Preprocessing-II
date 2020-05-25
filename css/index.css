@@ -262,4 +262,11 @@ nav a:hover {
   border-radius: 10px;
   background-color: teal;
   color: white;
+  border: 1px solid lightgrey;
+}
+.home .content-pick .destination .btn:hover {
+  background-color: #80ffff;
+}
+.home .content-pick .destinationhover {
+  background-color: #80ffff;
 }
