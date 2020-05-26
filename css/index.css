@@ -223,23 +223,27 @@ nav a:hover {
 @media (max-width:500px) {
   .home .content-section {
     padding: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 .home .content-section .text-content {
+  display: flex;
   width: 48%;
   padding-right: 1%;
 }
 @media (max-width:500px) {
   .home .content-section .text-content {
-    width: 100%;
+    padding: 2rem;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 .home .content-section .img-content {
+  display: flex;
   width: 48%;
   padding-left: 1%;
-}
-.home .content-section .img-content img {
-  border-radius: 10px;
 }
 .home .inverse-content {
   padding-bottom: 30px;
