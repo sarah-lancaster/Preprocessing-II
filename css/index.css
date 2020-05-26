@@ -208,15 +208,31 @@ nav a:hover {
 .home header .intro {
   padding: 3rem 0;
 }
+@media (max-width:500px) {
+  .home header {
+    flex-direction: column;
+    padding: 2rem;
+  }
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width:500px) {
+  .home .content-section {
+    padding: 2rem;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+}
+@media (max-width:500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content {
   width: 48%;

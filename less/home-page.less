@@ -13,6 +13,10 @@
     .intro {
       padding: 3rem 0;
     }
+    @media @tablet{
+      flex-direction: column;
+      padding: 2rem;
+    }
   }
 
 
@@ -22,23 +26,36 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
+    @media @tablet{
+      padding: 2rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
    
     
     .text-content {
+      display: flex;
       width: 48%;
       padding-right: 1%;
     }
 
     .img-content {
+      display: flex;
       width: 48%;
       padding-left: 1%;
-
+      @media @tablet{
+        width: 100%;
+      }
       img {
         border-radius: 10px;
+        @media @tablet{
+          width: ;
+        }
       }
     }
-  }
+
+
 
   .inverse-content {
     padding-bottom: 30px;
@@ -78,8 +95,5 @@
       }
     }
   }
-  
-  @media @tablet{
-    
-  }
+
 }// home
