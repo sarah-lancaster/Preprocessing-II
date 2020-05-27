@@ -202,6 +202,23 @@ nav a:hover {
   justify-content: space-between;
   border-bottom: 2px dashed #C0C0C0;
 }
+.home header h1 {
+  animation: glowing 1500ms infinite;
+}
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 -10px #ffe97b;
+  }
+  40% {
+    box-shadow: 0 0 40px #ffe97b;
+  }
+  60% {
+    box-shadow: 0 0 40px #ffe97b;
+  }
+  100% {
+    box-shadow: 0 0 -10px #ffe97b;
+  }
+}
 .home header .beep {
   border-top: 2px dashed #C0C0C0;
 }
@@ -232,6 +249,7 @@ nav a:hover {
   display: flex;
   width: 48%;
   padding-right: 1%;
+  flex-direction: column;
 }
 @media (max-width:500px) {
   .home .content-section .text-content {

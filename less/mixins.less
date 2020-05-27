@@ -14,12 +14,13 @@
     }
 }
 
-.fades(){
-	
-	.keyframes(fade-in;{
-		0% { opacity: 0; }
-		100% { opacity: 1; }
-		});
+.glowing(){
+    animation: glowing 1500ms infinite;
 
-    .animation(fade-in 0.2s linear infinite alternate)
+    @keyframes glowing {
+        0% { box-shadow: 0 0 -10px #ffe97b; }
+        40% { box-shadow: 0 0 40px #ffe97b; }
+        60% { box-shadow: 0 0 40px #ffe97b; }
+        100% { box-shadow: 0 0 -10px #ffe97b; };
+    }
 }
