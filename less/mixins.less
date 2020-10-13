@@ -1,1 +1,26 @@
 // Mixins in here
+
+.pushme(){
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 10px 40px;
+    border-radius: 10px;
+    background-color: teal;
+    color: white;
+    border: 1px solid lightgrey;
+    &:hover{
+        background-color: lighten(teal, 50%);
+    }
+}
+
+.glowing(){
+    animation: glowing 1500ms infinite;
+
+    @keyframes glowing {
+        0% { box-shadow: 0 0 -10px #ffe97b; }
+        40% { box-shadow: 0 0 40px #ffe97b; }
+        60% { box-shadow: 0 0 40px #ffe97b; }
+        100% { box-shadow: 0 0 -10px #ffe97b; };
+    }
+}
